@@ -46,8 +46,8 @@ Consequently, the architecture targets are derived from the actual PyTorch insta
 `setup.py` is responsible for interpreting the supplied configuration and compiling the extension accordingly. The build script determines the environment and the targets.
 
 ## 2. High-performance prebuilt wheels
-- for Pytorch see https://github.com/theIvanR/torch-on-clunkers
-- for causal-conv1d see
+- for high performance Pytorch 2.7.1 wheel see https://github.com/theIvanR/torch-on-clunkers
+- for causal-conv1d: https://drive.google.com/file/d/1deRG1heG6vdTK5LQpDq4JaMvartLdbx9/view?usp=drive_link
 
 > For additional Kepler GPU performance modifications, see [Kepler on Steroids](https://drive.google.com/file/d/1WeO1uz6DdOiAQooTUG2ouHa9ajZYDG0p/view?usp=drive_link).
 
