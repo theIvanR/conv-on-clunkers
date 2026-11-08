@@ -1,4 +1,4 @@
-# Causal Depthwise Conv1D for Legacy CUDA Architectures on Windows
+# Causal Depthwise Conv1D (1.7.0) for Legacy CUDA on Windows
 
 A Windows-native implementation of causal depthwise 1D convolution, adapted to support legacy NVIDIA GPU architectures within a modern PyTorch environment.
 
