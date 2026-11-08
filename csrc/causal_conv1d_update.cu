@@ -1,7 +1,3 @@
-/******************************************************************************
- * Copyright (c) 2023, Tri Dao.
- ******************************************************************************/
-
 #include <c10/util/BFloat16.h>
 #include <c10/util/Half.h>
 #include <c10/cuda/CUDAException.h>  // For C10_CUDA_CHECK and C10_CUDA_KERNEL_LAUNCH_CHECK
