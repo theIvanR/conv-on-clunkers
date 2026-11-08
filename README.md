@@ -151,7 +151,11 @@ After a successful build, install the generated wheel:
 python -m pip install --no-deps dist\causal_conv1d-*.whl
 ```
 
-Run the test suite to verify the extension.
+OPTIONAL: Run the test suite to verify the extension.
+
+```bat
+python test_causal_conv1d.py
+```
 
 ## 8. Usage
 
