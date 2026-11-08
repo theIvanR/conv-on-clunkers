@@ -46,12 +46,8 @@ Consequently, the architecture targets are derived from the actual PyTorch insta
 `setup.py` is responsible for interpreting the supplied configuration and compiling the extension accordingly. The build script determines the environment and the targets.
 
 ## 2. High-performance prebuilt wheels
-
-| PyTorch | Python | CUDA build | Build |
-|---|---|---|---|
-| 2.7.1 — all listed architectures, AVX2 | 3.11 | CUDA 11.8 | [Download wheel](https://drive.google.com/file/d/1czF3Dta-dX4neIvaNJm45666m-RTSnVQ/view?usp=sharing) |
-
-Wheel compatibility depends on the Python ABI, PyTorch build and CUDA environment. The configuration above is the reference build; compatibility with other environments should be verified.
+- for Pytorch see https://github.com/theIvanR/torch-on-clunkers
+- for causal-conv1d see
 
 > For additional Kepler GPU performance modifications, see [Kepler on Steroids](https://drive.google.com/file/d/1WeO1uz6DdOiAQooTUG2ouHa9ajZYDG0p/view?usp=drive_link).
 
@@ -64,7 +60,7 @@ The reference development environment uses:
 - Visual Studio 2019 with the MSVC v142 C++ toolchain
 - NVIDIA CUDA Toolkit 11.8
 - NVIDIA driver 472.50
-- PyTorch 2.7.1
+- PyTorch 2.7.1 (see link above)
 - Intel oneAPI 2024.2.1.101
 - cuDNN 8.7.0
 
@@ -192,16 +188,5 @@ F.conv1d(
 )[..., :seqlen]
 ```
 
-## 9. Additional prerequisites for AMD GPUs
-
-### Patching ROCm 6.0
-
-If using ROCm 6.0, apply the following patch to avoid compilation errors. This is not required for ROCm 6.1 and later.
-
-1. Locate your ROCm installation directory. This is typically `/opt/rocm/`, but may vary.
-
-2. Apply the patch:
-
-```bash
-sudo patch /opt/rocm/include/hip/amd_detail/amd_hip_bf16.h < rocm_patch/rocm6_0.patch
-```
+## 9. AMD GPUS? 
+- coming later
