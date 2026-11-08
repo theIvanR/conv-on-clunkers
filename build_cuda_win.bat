@@ -9,7 +9,7 @@ if errorlevel 1 (echo [ERROR] vcvarsall.bat failed & exit /b 1)
 set "PY=C:\Users\%USERNAME%\miniconda3\envs\py311_main\python.exe"
 
 REM Set up project paths
-set "PROJECT_DIR=C:\Users\%USERNAME%\source\causal-conv1d"
+set "PROJECT_DIR=C:\Users\%USERNAME%\source\conv-on-clunkers"
 cd /d "%PROJECT_DIR%" || (echo [build] cd to %PROJECT_DIR% failed & exit /b 1)
 
 REM tell distutils/torch we already activated the VC env 
