@@ -87,28 +87,7 @@ python -c "import torch; print(torch.__version__); print(torch.version.cuda); pr
 
 The installed PyTorch build must include the CUDA architectures intended for the extension.
 
-## 5. Build PyTorch
-
-Install or build the desired PyTorch version for the target environment.
-
-The important consideration is that PyTorch's compiled CUDA architecture list determines the architecture targets subsequently passed to this extension's build process.
-
-For example, the reference configuration reports:
-
-```text
-sm_35
-sm_37
-sm_50
-sm_52
-sm_60
-sm_61
-sm_70
-sm_75
-```
-
-The build script automatically retrieves this information. There is no need to manually reproduce this list in the extension configuration.
-
-## 6. Build the extension
+## 5. Build the extension
 
 Clone the repository:
 
@@ -120,7 +99,7 @@ cd causal-conv1d
 Run the Windows build script:
 
 ```bat
-build.bat
+build_cida_win.bat
 ```
 
 The script performs the following operations:
