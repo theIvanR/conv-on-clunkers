@@ -1,7 +1,3 @@
-/******************************************************************************
- * Copyright (c) 2024, Tri Dao.
- ******************************************************************************/
-
 #include <torch/extension.h>
 #if TORCH_VERSION_MAJOR > 2 || (TORCH_VERSION_MAJOR == 2 && TORCH_VERSION_MINOR >= 6)
 #include <c10/core/DeviceGuard.h>
