@@ -4,6 +4,10 @@ A Windows-native implementation of causal depthwise 1D convolution, adapted to s
 
 > Based on the work of Tri Dao
 
+## Project roadmap: 
+- Phase 1: Implementation (done)
+- Phase 2: Optimization and profiling (work in progress)
+
 ## Features
 
 - Supports FP32, FP16 and BF16 (subject to hardware and kernel constraints).
