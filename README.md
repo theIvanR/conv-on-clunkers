@@ -92,14 +92,14 @@ The installed PyTorch build must include the CUDA architectures intended for the
 Clone the repository:
 
 ```bat
-git clone https://github.com/theIvanr/causal-conv1d.git
-cd causal-conv1d
+git clone https://github.com/theIvanr/conv-on-clunkers
+cd conv-on-clunkers
 ```
 
 Run the Windows build script:
 
 ```bat
-build_cida_win.bat
+build_cuda_win.bat
 ```
 
 The script performs the following operations:
